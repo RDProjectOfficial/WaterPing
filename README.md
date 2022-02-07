@@ -7,8 +7,9 @@ How to use:
 
 Commands:
 
-        • /hubreload - Reloads the configuration (Permission: WaterHub.HubReload)
-	• /hub - Main Command, (Or you can set Other Aliases Into Config)(NoPermission)
+        • /pingreload - Reloads the configuration (Permission: WaterHub.PingReload)
+	• /ping - Main Command (Shows Your Ping) (NoPermission)
+	• /ping <otherPlayer> - Shows Other Player's Ping) (NoPermission)
 						
 Features:
 
