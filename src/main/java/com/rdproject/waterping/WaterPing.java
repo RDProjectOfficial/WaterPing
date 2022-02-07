@@ -33,7 +33,7 @@ public final class WaterPing extends Plugin {
         LoadConfigs();
         getLogger().info(STARTUP_MESSAGE);
 
-        UpdateChecker updateChecker = new UpdateChecker(this, 99826);
+        UpdateChecker updateChecker = new UpdateChecker(this, 99861);
         try {
             if (updateChecker.checkForUpdates()) {
                 getLogger().info(LIST);
