@@ -8,7 +8,7 @@
 ## Commands:
 
     • /pingreload - Reloads the configuration (Permission: WaterHub.PingReload)
-	• /ping - Main Command (Shows Your Ping) (NoPermission)
+	• /ping - Main Command (Shows Your Ping) (WaterPing.Ping)
 	• /ping <otherPlayer> - Shows Other Player's Ping) (NoPermission)
 						
 ## Features:
