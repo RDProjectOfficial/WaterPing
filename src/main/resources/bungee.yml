@@ -1,6 +1,6 @@
 name: WaterPing
 main: com.rdproject.waterping.WaterPing
-version: 1.0
+version: 1.1-STABLE
 author: RDProject
 description: The Smart Ping System
 website: https://github.com/RDProjectOfficial
