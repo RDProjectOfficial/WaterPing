@@ -8,9 +8,13 @@
 #WaterPing - BungeeCord Ping System
 #Support - https://github.com/RDProjectOfficial
 
+#Donate RDProject - https://www.donationalerts.com/r/rdattack
+
 #Settings
 Prefix: "§8• §bWaterPing §8× "
 NoPermission: "§bYou do not have permission!"
+Config-Reloaded: "§bConfiguration successfully reloaded!"
+Check-Updates: true
 
 #Message
 ping-message: "§7Your ping is §b%ping% §7ms!"

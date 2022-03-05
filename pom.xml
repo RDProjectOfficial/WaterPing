@@ -6,7 +6,7 @@
 
     <groupId>com.rdproject</groupId>
     <artifactId>WaterPing</artifactId>
-    <version>1.0</version>
+    <version>1.1-STABLE</version>
     <packaging>jar</packaging>
 
     <name>WaterPing</name>
@@ -70,6 +70,12 @@
             <groupId>io.github.waterfallmc</groupId>
             <artifactId>waterfall-api</artifactId>
             <version>1.18-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>RELEASE</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

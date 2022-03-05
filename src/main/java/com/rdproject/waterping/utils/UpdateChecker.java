@@ -1,10 +1,9 @@
-package com.rdproject.waterping;
+package com.rdproject.waterping.utils;
 
 import java.io.*;
 import java.net.*;
 import net.md_5.bungee.api.plugin.*;
 
-@SuppressWarnings("ALL")
 public class UpdateChecker {
     private int project = 0;
 
