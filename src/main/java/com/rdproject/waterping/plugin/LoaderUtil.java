@@ -69,8 +69,6 @@ public class LoaderUtil {
     }
 
     public static void LoadListeners() {
-        PluginManager pm = ProxyServer.getInstance().getPluginManager();
-        pm.registerListener(plugin, new TabCompleteEvent());
         NOPERM = cg.getString("Prefix") + cg.getString("NoPermission");
         PREFIX = cg.getString("Prefix");
     }

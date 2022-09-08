@@ -6,14 +6,23 @@ import net.md_5.bungee.api.plugin.*;
 
 import static com.rdproject.waterping.utils.ConstantsUtil.*;
 
-public class Ping extends Command {
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import com.rdproject.waterping.utils.StringUtil;
+
+public class Ping extends Command implements TabExecutor {
+
+    private static final String PINGPERM = "WaterPing.Ping";
+    private static final String PINGOTHERPERM = "WaterPing.Ping.Others";
+
     public Ping() {
         super("ping");
     }
 
     public void execute(CommandSender sender, String[] args) {
-        String PINGPERM = "WaterPing.Ping";
-        String PINGOTHERPERM = "WaterPing.Ping.Others";
         String POTHER = cg.getString("ping-other-message");
         String PMSG = cg.getString("ping-message");
         String PNFOUND = cg.getString("player-not-found");
@@ -42,5 +51,16 @@ public class Ping extends Command {
                     .replace("%ping%", "" + targetP.getPing())
                     .replace("%target%", targetP.getName())));
         }
+    }
+
+    @Override
+    public Iterable<String> onTabComplete(CommandSender sender, String[] args) {
+        if (args.length == 1 && sender.hasPermission(PINGOTHERPERM)) {
+            List<String> players = ProxyServer.getInstance().getPlayers().stream()
+                    .map(ProxiedPlayer::getName)
+                    .collect(Collectors.toList());
+            return StringUtil.copyPartialMatches(args[0], players, new ArrayList<>());
+        }
+        return Collections.emptyList();
     }
 }
